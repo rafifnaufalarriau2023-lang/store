@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Football Store | Akun & Jasa Joki Premium</title>
+    <meta name="description" content="Toko Akun eFootball Terpercaya dan Jasa Joki Rank/Event Profesional.">
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">E-FOOTBALL<span>STORE</span></div>
+        <div class="nav-links">
+            <a onclick="showSection('home')" id="nav-home" class="active"><i class="fas fa-home"></i> BERANDA</a>
+            <a onclick="showSection('joki')" id="nav-joki"><i class="fas fa-bolt"></i> JOKI</a>
+            <a onclick="showSection('store')" id="nav-store"><i class="fas fa-shopping-bag"></i> BELI AKUN</a>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Cari Akun atau Joki...">
+            </div>
+            <button class="btn-sell">
+                <i class="fas fa-plus-circle"></i> JUAL AKUN
+            </button>
+        </div>
+    </nav>
+
+    <!-- Running Text (Marquee) -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            E-FOOTBALL STORE, SIAPA CEPAT DIA DAPAT ● FLASH SALE AKUN PROMO ● SIAPA CEPAT DIA DAPAT ● UPDATE AKUN SETIAP HARI ● JOKI TERMURAH SE-INDONESIA ●
+            E-FOOTBALL STORE, SIAPA CEPAT DIA DAPAT ● FLASH SALE AKUN PROMO ● SIAPA CEPAT DIA DAPAT ● UPDATE AKUN SETIAP HARI ● JOKI TERMURAH SE-INDONESIA ●
+        </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- ===== SECTION: BERANDA ===== -->
+        <section id="home" class="active">
+
+            <!-- Hero Carousel (padded) -->
+            <div class="inner-container">
+                <div class="hero-carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop" alt="Banner 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?q=80&w=1200&auto=format&fit=crop" alt="Banner 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=1200&auto=format&fit=crop" alt="Banner 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?q=80&w=1200&auto=format&fit=crop" alt="Banner 4">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1518091043644-c1d445bee519?q=80&w=1200&auto=format&fit=crop" alt="Banner 5">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1551280857-2b9bbe52cfc8?q=80&w=1200&auto=format&fit=crop" alt="Banner 6">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1431324155629-1a6eda1eed2d?q=80&w=1200&auto=format&fit=crop" alt="Banner 7">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="why-us">
+                    <h2 class="section-title">MENGAPA HARUS E-FOOTBALL STORE?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Keamanan Terjamin</h3>
+                            <p>Sistem keamanan akun 100% aman dari hackback. Transaksi bergaransi penuh.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-bolt"></i>
+                            <h3>Proses Kilat</h3>
+                            <p>Pengiriman akun dan proses joki dilakukan secara instan oleh tim profesional kami.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-tags"></i>
+                            <h3>Harga Termurah</h3>
+                            <p>Kami menawarkan harga paling kompetitif di pasar eFootball Indonesia.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-headset"></i>
+                            <h3>Layanan 24/7</h3>
+                            <p>Tim support kami siap membantu kendala kamu kapan saja via WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END inner-container -->
+
+            <!-- ===== LAYANAN + FLASH SALE + FAQ = FULL WIDTH ===== -->
+            <div class="curved-wrapper">
+
+                <!-- Layanan Unggulan -->
+                <div class="white-section" style="background: #fff; border-top: 1px solid #eee;">
+                    <div class="white-content">
+                        <h2 class="section-title-dark" style="color: #001d4a;">LAYANAN UNGGULAN KAMI</h2>
+                        <div class="category-grid">
+                            <div class="category-card" onclick="showSection('store')">
+                                <div class="category-banner">
+                                    <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?q=80&w=800&auto=format&fit=crop" alt="Beli Akun">
+                                </div>
+                                <div class="category-footer">
+                                    <span>BELI AKUN</span>
+                                </div>
+                            </div>
+                            <div class="category-card" onclick="showSection('joki')">
+                                <div class="category-banner">
+                                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop" alt="Joki Akun">
+                                </div>
+                                <div class="category-footer">
+                                    <span>JOKI AKUN</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flash Sale Carousel -->
+                <div class="flash-sale-container">
+                    <h2 class="fs-title"><i class="fas fa-bolt"></i> FLASH SALE TERBATAS</h2>
+                    <div class="flash-carousel-wrapper">
+                        <button class="carousel-nav-btn nav-prev" onclick="moveFlashSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-nav-btn nav-next" onclick="moveFlashSlide(1)"><i class="fas fa-chevron-right"></i></button>
+                        <div class="flash-carousel-container">
+                            <div class="flash-carousel-track">
+                                <!-- SQUAD 1 -->
+                                <div class="flash-slide active">
+                                    <div class="flash-poster">
+                                        <div class="poster-header">
+                                            <div class="poster-logo">E-FOOTBALL STORE</div>
+                                            <div class="poster-badge-new">FLASH SALE</div>
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800&auto=format&fit=crop" alt="Squad 1">
+                                        <div class="poster-info">
+                                            <div class="poster-stats">
+                                                <span><i class="fas fa-users"></i> EPIC 11</span>
+                                                <span><i class="fas fa-star"></i> POWER 3100</span>
+                                                <span><i class="fas fa-coins"></i> 500 COINS</span>
+                                            </div>
+                                            <div class="poster-title">EPIC SQUAD EXCLUSIVE EDITION</div>
+                                            <div class="price-box">
+                                                <div class="poster-price">RP 850K</div>
+                                                <div class="poster-old-price">RP 1.5M</div>
+                                            </div>
+                                            <div class="poster-footer">
+                                                <div class="footer-left"><i class="fas fa-shield-alt"></i> GARANSI ANTI HB</div>
+                                                <div class="footer-right">STOK <span class="dm-count">TERBATAS</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SQUAD 2 -->
+                                <div class="flash-slide">
+                                    <div class="flash-poster">
+                                        <div class="poster-header">
+                                            <div class="poster-logo">E-FOOTBALL STORE</div>
+                                            <div class="poster-badge-new">LIMITED</div>
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?q=80&w=800&auto=format&fit=crop" alt="Squad 2">
+                                        <div class="poster-info">
+                                            <div class="poster-stats">
+                                                <span><i class="fas fa-users"></i> BT 3</span>
+                                                <span><i class="fas fa-star"></i> POWER 3050</span>
+                                                <span><i class="fas fa-coins"></i> 1200 COINS</span>
+                                            </div>
+                                            <div class="poster-title">MESSI BIG TIME SPECIAL PACK</div>
+                                            <div class="price-box">
+                                                <div class="poster-price">RP 1.2M</div>
+                                                <div class="poster-old-price">RP 2M</div>
+                                            </div>
+                                            <div class="poster-footer">
+                                                <div class="footer-left"><i class="fas fa-shield-alt"></i> DATA AMAN</div>
+                                                <div class="footer-right">SISA <span class="dm-count">2 AKUN</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SQUAD 3 -->
+                                <div class="flash-slide">
+                                    <div class="flash-poster">
+                                        <div class="poster-header">
+                                            <div class="poster-logo">E-FOOTBALL STORE</div>
+                                            <div class="poster-badge-new">MEGA SALE</div>
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop" alt="Squad 3">
+                                        <div class="poster-info">
+                                            <div class="poster-stats">
+                                                <span><i class="fas fa-users"></i> SHOW 5</span>
+                                                <span><i class="fas fa-star"></i> POWER 3120</span>
+                                                <span><i class="fas fa-coins"></i> 200 COINS</span>
+                                            </div>
+                                            <div class="poster-title">SHOWTIME LEGENDARY SQUAD</div>
+                                            <div class="price-box">
+                                                <div class="poster-price">RP 950K</div>
+                                                <div class="poster-old-price">RP 1.8M</div>
+                                            </div>
+                                            <div class="poster-footer">
+                                                <div class="footer-left"><i class="fas fa-bolt"></i> PROSES KILAT</div>
+                                                <div class="footer-right">SISA <span class="dm-count">1 AKUN</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SQUAD 4 -->
+                                <div class="flash-slide">
+                                    <div class="flash-poster">
+                                        <div class="poster-header">
+                                            <div class="poster-logo">E-FOOTBALL STORE</div>
+                                            <div class="poster-badge-new">NEW ITEM</div>
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1518091043644-c1d445bee519?q=80&w=800&auto=format&fit=crop" alt="Squad 4">
+                                        <div class="poster-info">
+                                            <div class="poster-stats">
+                                                <span><i class="fas fa-users"></i> EPIC 15</span>
+                                                <span><i class="fas fa-star"></i> POWER 3150</span>
+                                                <span><i class="fas fa-coins"></i> 100 COINS</span>
+                                            </div>
+                                            <div class="poster-title">ULTIMATE BOOSTER SQUAD</div>
+                                            <div class="price-box">
+                                                <div class="poster-price">RP 1.5M</div>
+                                                <div class="poster-old-price">RP 2.5M</div>
+                                            </div>
+                                            <div class="poster-footer">
+                                                <div class="footer-left"><i class="fas fa-shield-alt"></i> FULL AKSES</div>
+                                                <div class="footer-right">SISA <span class="dm-count">VVIP</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SQUAD 5 -->
+                                <div class="flash-slide">
+                                    <div class="flash-poster">
+                                        <div class="poster-header">
+                                            <div class="poster-logo">E-FOOTBALL STORE</div>
+                                            <div class="poster-badge-new">VVIP DEAL</div>
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=800&auto=format&fit=crop" alt="Squad 5">
+                                        <div class="poster-info">
+                                            <div class="poster-stats">
+                                                <span><i class="fas fa-gem"></i> LEGEND 20</span>
+                                                <span><i class="fas fa-bolt"></i> POWER 3200</span>
+                                                <span><i class="fas fa-wallet"></i> 2000 COINS</span>
+                                            </div>
+                                            <div class="poster-title">LEGENDARY VVIP MASTER PACK</div>
+                                            <div class="price-box">
+                                                <div class="poster-price">RP 1.8M</div>
+                                                <div class="poster-old-price">RP 3.5M</div>
+                                            </div>
+                                            <div class="poster-footer">
+                                                <div class="footer-left"><i class="fas fa-shield-alt"></i> AMAN & TERPERCAYA</div>
+                                                <div class="footer-right">STOK <span class="dm-count">READY</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SQUAD 6 -->
+                                <div class="flash-slide">
+                                    <div class="flash-poster">
+                                        <div class="poster-header">
+                                            <div class="poster-logo">E-FOOTBALL STORE</div>
+                                            <div class="poster-badge-new">SUPREME</div>
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800&auto=format&fit=crop" alt="Squad 6">
+                                        <div class="poster-info">
+                                            <div class="poster-stats">
+                                                <span><i class="fas fa-fire"></i> SHOWTIME 5</span>
+                                                <span><i class="fas fa-trophy"></i> POWER 3180</span>
+                                                <span><i class="fas fa-coins"></i> 1500 COINS</span>
+                                            </div>
+                                            <div class="poster-title">SUPREME SHOWTIME COLLECTION</div>
+                                            <div class="price-box">
+                                                <div class="poster-price">RP 1.4M</div>
+                                                <div class="poster-old-price">RP 2.2M</div>
+                                            </div>
+                                            <div class="poster-footer">
+                                                <div class="footer-left"><i class="fas fa-check-circle"></i> ANTI-HB 100%</div>
+                                                <div class="footer-right">SISA <span class="dm-count">REMAINT 1</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SQUAD 7 -->
+                                <div class="flash-slide">
+                                    <div class="flash-poster">
+                                        <div class="poster-header">
+                                            <div class="poster-logo">E-FOOTBALL STORE</div>
+                                            <div class="poster-badge-new">PROMO</div>
+                                        </div>
+                                        <img src="https://images.unsplash.com/photo-1518091043644-c1d445bee519?q=80&w=800&auto=format&fit=crop" alt="Squad 7">
+                                        <div class="poster-info">
+                                            <div class="poster-stats">
+                                                <span><i class="fas fa-users"></i> EPIC 5</span>
+                                                <span><i class="fas fa-star"></i> POWER 3000</span>
+                                                <span><i class="fas fa-coins"></i> 1000 COINS</span>
+                                            </div>
+                                            <div class="poster-title">COIN COLLECTOR EDITION</div>
+                                            <div class="price-box">
+                                                <div class="poster-price">RP 650K</div>
+                                                <div class="poster-old-price">RP 1.2M</div>
+                                            </div>
+                                            <div class="poster-footer">
+                                                <div class="footer-left"><i class="fas fa-bolt"></i> PROSES INSTAN</div>
+                                                <div class="footer-right">STOK <span class="dm-count">MELIMPAH</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment & FAQ -->
+                <div class="white-bottom-area">
+                    <div class="payment-section">
+                        <p class="section-subtitle-dark">Kami menerima berbagai metode pembayaran instan dan aman.</p>
+                        <div class="payment-logos">
+                            <div class="pay-item">GOPAY</div>
+                            <div class="pay-item">OVO</div>
+                            <div class="pay-item">DANA</div>
+                            <div class="pay-item">QRIS</div>
+                            <div class="pay-item">BANK TRANSFER</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-container">
+                        <h2 class="section-title-dark">FREQUENTLY ASKED QUESTIONS</h2>
+                        <div class="faq-grid">
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleFaq(this)">
+                                    <span>Apa itu E-Football Store?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>E-Football Store adalah platform terpercaya untuk jual-beli akun eFootball premium dan jasa joki profesional dengan harga termurah dan keamanan terjamin.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleFaq(this)">
+                                    <span>Bagaimana cara membeli akun di sini?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Cukup pilih akun yang kamu inginkan di katalog, klik tombol "Beli Sekarang", dan kamu akan diarahkan ke WhatsApp admin untuk proses pembayaran dan serah terima akun secara instan.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleFaq(this)">
+                                    <span>Apakah jasa joki di E-Football Store aman?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Sangat aman! Tim joki kami adalah pemain profesional yang menjamin keamanan data akun kamu. Kami tidak pernah meminta data sensitif selain yang diperlukan untuk login game.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleFaq(this)">
+                                    <span>Apa saja metode pembayaran yang tersedia?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Kami menerima berbagai metode pembayaran populer seperti QRIS, E-Wallet (Dana, OVO, GoPay), serta transfer antar bank nasional.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleFaq(this)">
+                                    <span>Berapa lama proses pengiriman akun?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Proses pengiriman akun dilakukan secara instan setelah pembayaran terverifikasi. Admin akan memberikan detail akun dalam waktu kurang dari 10-15 menit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- END curved-wrapper -->
+
+        </section>
+        <!-- END #home -->
+
+        <!-- ===== SECTION: BELI AKUN ===== -->
+        <section id="store">
+            <div class="inner-container">
+                <!-- Isi Katalog Akun akan kamu buat sendiri nanti -->
+                <h2 class="section-title">KATALOG AKUN PREMIUM</h2>
+                <div style="text-align: center; padding: 5rem 0;">
+                    <p style="color: var(--text-gray); font-size: 1.2rem;">Konten sedang dikembangkan...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: JOKI ===== -->
+        <section id="joki">
+            <div class="inner-container">
+                <!-- Isi Jasa Joki akan kamu buat sendiri nanti -->
+                <h2 class="section-title">JASA JOKI PROFESIONAL</h2>
+                <div style="text-align: center; padding: 5rem 0;">
+                    <p style="color: var(--text-gray); font-size: 1.2rem;">Konten sedang dikembangkan...</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- END .container -->
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">E-FOOTBALL<span>STORE</span></div>
+                <p>Platform terpercaya untuk jual-beli akun eFootball dan jasa joki profesional di Indonesia. Siapa cepat dia dapat!</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>NAVIGASI</h3>
+                <ul>
+                    <li><a onclick="showSection('home')">Beranda</a></li>
+                    <li><a onclick="showSection('store')">Katalog Akun</a></li>
+                    <li><a onclick="showSection('joki')">Jasa Joki</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>DUKUNGAN</h3>
+                <ul>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                    <li><a href="#">Cek Pesanan</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>HUBUNGI KAMI</h3>
+                <p><i class="fas fa-envelope"></i> admin@efootballstore.com</p>
+                <p><i class="fab fa-whatsapp"></i> +62 877-6880-4654</p>
+                <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 E-Football Store Indonesia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
